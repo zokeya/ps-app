@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --yellow: linear-gradient(180deg, #F8D49A -146.42%, #FAD79D -46.42%);
+    --orange: #fca61f;
+    --black: #242d49;
+    --gray: #788097;
+    --purple: linear-gradient(180deg, #BB67FF 0%, #C484F3 100%);
+    --pink: #FF919D;
+    --glass: rgba(255, 255, 255, 0.54);
+    --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+    --activeItem: #f799a354;
+  }
+
+  .mainApp {
+    /* padding: 0.5rem 3.5rem; */
+    color: var(--black);
+    background: linear-gradient(
+      106.37deg,
+      #ffe1bc 29.63%,
+      #ffcfd1 51.55%,
+      #f3c6f1 90.85%
+    );
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .AppGlass {
+    display: grid;
+    height: 97%;
+    width: 97%;
+    background: var(--glass);
+    border-radius: 1rem;
+    gap: 16px;
+    grid-template-columns: 11rem auto;
+    overflow: hidden;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .AppGlass{
+      grid-template-columns: 10% 50% auto;
+      overflow-y: scroll;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .AppGlass{
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* header */
+  .header {
+    height: 80px;
+    width: 100%;
+    padding: 2rem 3rem;
+    background: var(--glass);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Login/Signup form */
+/*
+
+#defaultLayout {
+    display: flex;
+}
+
+#defaultLayout aside {
+    width: 240px;
+    background-color: #5b08a7;
+    padding: 1rem
+}
+
+#defaultLayout aside > a {
+    display: block;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+#defaultLayout aside > a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#defaultLayout .content {
+    flex: 1;
+}
+
+#defaultLayout header {
+    height: 80px;
+    padding: 2rem 3rem;
+    background-color: white;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#defaultLayout main {
+    padding: 2rem;
+}
+
+.animated {
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+ */
